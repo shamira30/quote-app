@@ -21,9 +21,9 @@ function randomQuote(){
 
 soundBtn.addEventListener("click", ()=>{
     // the SpeechSynthesisUtterance is a web speech API that represents a speech request
-    let utterance = new SpeechSynthesisUtterance ('${quoteText.innerText}');
+    let utterance = new SpeechSynthesisUtterance ('${quoteText.innerText')} by $({authorName.innerText});
 speechSynthesis.speak(utterance); // speak method of speechSynthesis speaks the utterance
-});
+);
 
 quoteBtn.addEventListener("click", randomQuote);
 
