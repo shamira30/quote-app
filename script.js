@@ -23,8 +23,17 @@ soundBtn.addEventListener("click", ()=>{
     // the SpeechSynthesisUtterance is a web speech API that represents a speech request
     let utterance = new SpeechSynthesisUtterance ('${quoteText.innerText')} by $({authorName.innerText});
 speechSynthesis.speak(utterance); // speak method of speechSynthesis speaks the utterance
-);
+});
 
+copyBtn.addEventListener("click", ()=>{
+    // copying the quote text on copyBtn click
+    //write Text () property writes the specified text string to the system clipboard.
+    navigator.clipboard.writeText(quoteText.innerText);
+});
+
+twitterBtn.addEventListener("click", ()=>{
+    let twitterUrl ="https://twitter.com/intent/tweet?url=${}"
+})
 quoteBtn.addEventListener("click", randomQuote);
 
 $("button").on("click", function() {
