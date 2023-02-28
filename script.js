@@ -1,18 +1,31 @@
 const quoteText = document.querySelector (".quote"),
 authorName = document.querySelector(".author .name")
-quoteBtn = document.querySelector("button");
+quoteBtn = document.querySelector("button"),
+soundBtn = document.querySelector(".sound"),
+copyBtn = document.querySelector(".copy"),
+twitterBtn = document.querySelector(".twitter"),
 
 //random quote function
 function randomQuote(){
+    quoteBtn.classlist.add("loading");
+    quoteBtn.innerText = "Loading Quote... ";
+    //fetching random quotes from the API and parsing it into JavaScript object
     console.log("Clicked")
     fetch("https://api.quotable.io/random").then(res => res.json()).then(result => {
         console.log(result);
         quoteText.innerText = result.content;
-        authorName.innerText = result.content;
-        
-
-    })
+        authorName.innerText = result.author;
+        quoteBtn.innerText = "New Quote";
+    });
 }   
+
+soundBtn.addEventListener("click", ()=>{
+    // the SpeechSynthesisUtterance is a web speech API that represents a speech request
+    let utterance = new SpeechSynthesisUtterance ('${quoteText.innerText}');
+speechSynthesis.speak(utterance); // speak method of speechSynthesis speaks the utterance
+});
+
+quoteBtn.addEventListener("click", randomQuote);
 
 $("button").on("click", function() {
     var person = $(this).attr("Selena Gomez");

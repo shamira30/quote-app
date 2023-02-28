@@ -94,3 +94,7 @@ body{
     border-radius: 30px;
     background: #e68ba2;
 }
+button.load{
+    opacity: 0.7;
+    pointer-events: none;
+}
