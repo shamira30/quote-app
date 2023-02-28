@@ -1,3 +1,19 @@
+const quoteText = document.querySelector (".quote"),
+authorName = document.querySelector(".author .name")
+quoteBtn = document.querySelector("button");
+
+//random quote function
+function randomQuote(){
+    console.log("Clicked")
+    fetch("https://api.quotable.io/random").then(res => res.json()).then(result => {
+        console.log(result);
+        quoteText.innerText = result.content;
+        authorName.innerText = result.content;
+        
+
+    })
+}   
+
 $("button").on("click", function() {
     var person = $(this).attr("Selena Gomez");
     var queryURL = "https://api.giphy.com/v1/gifs/random?api_key=DK82uFdy1Fn63dlP8LypoNzoPJCVAbwz&tag=funny&rating=g" + Selena Gomez + "DK82uFdy1Fn63dlP8LypoNzoPJCVAbwz";

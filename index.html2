@@ -1,0 +1,6 @@
+<button data-person="Selena Gomez">"The reason why I've become so vocal about the trials and tribulations of my life is because people were already going to narrate that for me.</button>
+    <button data-person="Justin Bieber">“Haters are just confused admirers.”
+    </button>
+
+    <span class="name">Justin Bieber</span>
+     <p class="quote">“Haters are just confused admirers.”</p>
