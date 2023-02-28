@@ -32,14 +32,16 @@ copyBtn.addEventListener("click", ()=>{
 });
 
 twitterBtn.addEventListener("click", ()=>{
-    let twitterUrl ="https://twitter.com/intent/tweet?url=${}"
+    let twitterUrl ="https://twitter.com/intent/tweet?url=${quoteText.innerText}";
+    window.open(tweetUrl, "_blank"); //opening a new twitter tab with the quote in the url
 })
 quoteBtn.addEventListener("click", randomQuote);
 
 $("button").on("click", function() {
     var person = $(this).attr("Selena Gomez");
     var queryURL = "https://api.giphy.com/v1/gifs/random?api_key=DK82uFdy1Fn63dlP8LypoNzoPJCVAbwz&tag=funny&rating=g" + Selena Gomez + "DK82uFdy1Fn63dlP8LypoNzoPJCVAbwz";
-    
+}
+
 $.ajax ({
     url: queryURL
     method: "GET"
