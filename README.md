@@ -55,11 +55,3 @@ npm start
 - JavaScript
 - HTML
 
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-```
-
-Again, make sure to replace `[Insert CSS Framework Name]` with the actual name of the CSS framework you used in your project.
-
-Feel free to customize the README file further based on your project's specific details and requirements.
