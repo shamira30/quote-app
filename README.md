@@ -1,5 +1,5 @@
 
-```markdown
+
 # Quote App
 
 ## Description
