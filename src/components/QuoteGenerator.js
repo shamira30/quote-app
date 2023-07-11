@@ -9,7 +9,7 @@ const QuoteGenerator = () => {
   const fetchQuote = async () => {
     // Replace `YOUR_API_ENDPOINT` with the actual API endpoint or implement logic to fetch from a predefined list
     try {
-      const response = await fetch("http://api.quotable.io/random");
+      const response = await fetch("https://api.quotable.io/random");
       const data = await response.json();
       const randomQuote = data;
       setQuote(randomQuote);
