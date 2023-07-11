@@ -18,7 +18,6 @@ The app also utilizes local storage to display the previous search city on the r
 ## APIs Used
 
 - Random Quote API
-- They Said So API
 
 ## Installation
 
